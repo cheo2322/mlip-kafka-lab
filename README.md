@@ -55,4 +55,20 @@ For your group project you will be reading movies from the Kafka stream. Try fin
 - [What is Apache Kafka? - TIBCO](https://www.tibco.com/reference-center/what-is-apache-kafka)
 - [frequent bug list and solutions](./bug_list.md)
 
+# Notes for Production Deployment class
 
+Please check the commits made specifically for this class.
+
+Steps to deploy:
+
+- Install Docker Desktop and the Apache Kafka container. Follow this [docs](https://hub.docker.com/r/apache/kafka) for references
+- Install `kafka-python` via `pip`
+```bash
+pip install kafka-python
+```
+- Once everything is running and installed, execute the notebook `KafkaDemo.ipynb`
+- As a producer, it should send data to the Kafka consumer
+![Kafka producer records](3.PNG)
+
+- As a consumer, it should retrieve records from the producer run before
+![Kafka consumer records](4.PNG)
